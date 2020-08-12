@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="payment_cart_collect_items_and_amounts">
+        <observer name="payment_cart_collect_items_and_amounts_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="checkout_cart_product_add_after" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_update_items_after">
+        <observer name="checkout_cart_update_items_after" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="sales_quote_remove_item">
+        <observer name="sales_quote_remove_item" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <!-- Customer events -->
+    <event name="customer_login">
+        <observer name="customer_login" instance="Comm100\LiveChat\Model\Observer\Customer\CustomerObserver" />
+    </event>
+    <event name="customer_register_success">
+        <observer name="customer_register_success" instance="Comm100\LiveChat\Model\Observer\Customer\CustomerObserver" />
+    </event>
+    <event name="customer_logout">
+        <observer name="customer_logout" instance="Comm100\LiveChat\Model\Observer\Customer\CustomerObserver" />
+    </event>
+    <!-- Order Events -->
+    <event name="sales_order_place_after">
+        <observer name="sales_order_place_after" instance="Comm100\LiveChat\Model\Observer\Order\OrderObserver" />
+    </event>
+    <!--     
+    <event name="checkout_controller_onepage_saveOrder">
+        <observer name="checkout_controller_onepage_saveOrder_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_onepage_controller_success_action">
+        <observer name="checkout_onepage_controller_success_action_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="checkout_cart_product_add_after_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_update_items_before">
+        <observer name="checkout_cart_update_items_before_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_update_items_after">
+        <observer name="checkout_cart_update_items_after_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_save_before">
+        <observer name="checkout_cart_save_before_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_save_after">
+        <observer name="checkout_cart_save_after_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <event name="checkout_cart_product_update_after">
+        <observer name="checkout_cart_product_update_after_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event> -->
+
+    <event name="customer_save_after">
+        <observer name="customer_save_after_comm100_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Cart\CartObserver" />
+    </event>
+    <!-- <event name="customer_delete_after">
+        <observer name="customer_delete_after_sweettooth_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Customer\Delete"/>
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="product_save_after_sweettooth_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Product\Save"/>
+    </event>
+    <event name="catalog_product_delete_after">
+        <observer name="product_delete_after_sweettooth_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Product\Delete"/>
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="sales_order_save_after_sweettooth_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Order\Save"/>
+    </event>
+    <event name="sales_order_delete_after">
+        <observer name="sales_order_delete_after_sweettooth_webhook_observer" instance="Comm100\LiveChat\Model\Observer\Order\Delete"/>
+    </event> -->
+</config>
