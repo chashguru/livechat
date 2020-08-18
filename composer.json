@@ -1,6 +1,6 @@
 
 {
-	"name": "comm100/live-chat",
+	"name": "comm100/live-chat-dev",
 	"type": "magento2-module",
 	"description": "Create comm 100 live chat and integration",
 	"require": {
