@@ -14,7 +14,6 @@
 		"magento/framework": "100.*|101.*|102.*",
 		"magento/module-integration": "100.*|101.*|102.*"
 	},
-	"version": "0.0.2",
 	"minimum-stability": "stable",
 	"license": [
 		"OSL-3.0",
