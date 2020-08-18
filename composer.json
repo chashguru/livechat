@@ -15,7 +15,7 @@
 		"magento/module-integration": "100.*|101.*|102.*"
 	},
 	"version": "0.0.2",
-	    "minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"license": [
 		"OSL-3.0",
 		"AFL-3.0"
